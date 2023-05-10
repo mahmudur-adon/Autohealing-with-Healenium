@@ -1,0 +1,49 @@
+# Ignore file for recheck. Please do not delete, even if it is empty.
+
+import: metadata.filter
+
+matcher: type=input, attribute-regex=border-.*-color
+pixel-diff=2px
+attribute=outline
+attribute=absolute-outline
+attribute=style
+attribute=covered
+
+
+#attribute=id
+#attribute=transform
+#attribute-regex=padding-.*
+#attribute-regex=margin-.*
+#attribute=font-family
+
+
+
+
+# Instead of attributes, you can also ignore elements:
+#matcher: type=a
+
+# Or ignore elements that have a specific attribute:
+#matcher: id=banner
+
+# Of course, these can also be combined.
+# Ignore font of specific elements
+# matcher: retestid=div-2, attribute-regex: font.*
+
+# To ignore whole subtrees, use e.g. XPath:
+# matcher: xpath=HTML[1]/BODY[1]/DIV[1]/DIV[1]/DIV[1]
+
+# More details and examples can be found here:
+# https://retest.github.io/docs/recheck/how-ignore-works-in-recheck/
+
+
+# AnimationTest
+matcher: retestid=lorem_ipsum_dol, attribute=margin-left
+matcher: retestid=duis_autem_vel, attribute=margin-left
+matcher: retestid=nam_liber_tempor, attribute=margin-left
+matcher: retestid=ut_wisi_enim, attribute=margin-left
+matcher: retestid=this_is_yet_ano, attribute=margin-left
+matcher: retestid=at_vero_eos_et, attribute=margin-left
+matcher: retestid=the_caterpillar, attribute=margin-left
+matcher: retestid=consetetur_sadi, attribute=margin-left
+matcher: retestid=duis_autem_vel-1, attribute=margin-left
+matcher: retestid=banner, attribute=background-image
